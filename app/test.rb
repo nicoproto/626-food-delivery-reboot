@@ -1,4 +1,4 @@
-require_relative 'repositories/meal_repository'
+require_relative 'repositories/employee_repository'
 
-repo = MealRepository.new('data/meals.csv')
+repo = EmployeeRepository.new('data/employees.csv')
 p repo.all
