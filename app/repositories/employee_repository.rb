@@ -17,6 +17,10 @@ class EmployeeRepository
     @employees.find { |employee| employee.username == username }
   end
 
+  def find(id)
+    @employees.find { |employee| employee.id == id }
+  end
+
   private
 
   def save_csv
